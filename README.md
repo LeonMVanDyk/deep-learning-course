@@ -5,13 +5,13 @@ Deep learning course docker image
 Ensure the Docker is installed.  See [Download Docker Community Edition]( https://www.docker.com/community-edition) for download and installation instructions.
 
 ## Create Docker Install
-* Ensure your Docker is running
+* Ensure Docker is running
 * From a terminal window (Command Prompt on Windows) run the following commands
-  * cd <<THIS-REPO-WORKING-DIR>>/docker-image
-  * docker image build --tag deep-learning-course:0.0.1 .
+  * `cd <<THIS-REPO-HOME-DIR>>/docker-image`
+  * `docker image build --tag deep-learning-course:0.0.1 .`
 
 ## Start Docker Container
-* Ensure your Docker is running
+* Ensure Docker is running
 * From a terminal window (Command Prompt on Windows) run the following command
   * `docker run -p 8888:8888 -it --name deep-learning-course deep-learning-course:0.0.1`
 * You should now be able to access Jupyter Notebook
@@ -45,6 +45,8 @@ stop the running container
 start the stopped container
 
 `docker start -ia deep-learning-course`
+
+See [Docker Command-Line Interfaces (CLIs)](https://docs.docker.com/engine/reference/commandline/docker/)
 
  
 
