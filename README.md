@@ -1,7 +1,7 @@
 # deep-learning-course
 This section describes how to create the Docker container that will be used during the Cape Town Deep Learning Course.
 
-The created Docker, named **deep-learning-course**, packages all the necessary software dependencies and when run, runs Jupyter Notebook.
+The created Docker container, named **deep-learning-course**, packages all the necessary software dependencies and when run, runs Jupyter Notebook.
 
 Jupyter Notebook running in the Docker container is accessible from a web browser on the host machine at http://localhost:8888.    
 
