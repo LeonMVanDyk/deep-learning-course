@@ -15,16 +15,16 @@ Ensure the Docker is installed.  See [Download Docker Community Edition]( https:
 * From a terminal window (Command Prompt on Windows) run the following commands
   * `cd <<SOURCE-HOME-DIR>>/deep-learning-course/docker-image`
   * `docker image build --tag deep-learning-course:0.0.1 .`
-  * once the image is successfully build, run `docker images`, should list a image with **REPOSITORY** set to **deep-learning-course** and **TAG** set to **0.0.1**, other image attributes are also shown.
+  * once the image is successfully build, running `docker images` should list a image with **REPOSITORY** set to **deep-learning-course** and **TAG** set to **0.0.1**, other image attributes are also shown.
 
 ### Create Docker Container
 * Ensure Docker is running
 * From a terminal window (Command Prompt on Windows) run the following command
   * `docker create -p 8888:8888 -it --name deep-learning-course deep-learning-course:0.0.1`
-  * once the container was successfully created, run `docker ps -a` should list a container with **IMAGE** set to **deep-learning-course:0.0.1** and **NAME** set to **deep-learning-course**, other container attributes are also shown.
+  * once the container was successfully created, running `docker ps -a` should list a container with **IMAGE** set to **deep-learning-course:0.0.1** and **NAME** set to **deep-learning-course**, other container attributes are also shown.
 
 ## Using the Docker Container
-The typical pattern for using the docker container is as follows, with all docker commands are run from a terminal window (Command Prompt on Windows)
+The typical pattern for using the docker container is as follows, with all docker commands run from a terminal window (Command Prompt on Windows)
 
 * **start** the container : `docker start -ia deep-learning-course`
 * **work** with Jupyter Notebook running in the container : from a web browser on the host machine browse to http://localhost:8888
