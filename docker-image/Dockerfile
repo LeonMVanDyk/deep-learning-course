@@ -4,7 +4,9 @@ MAINTAINER Leon van Dyk <leon.vandyk@technovolve.co.za>
 
 RUN pip install --upgrade pip
     
-RUN pip install 'tensorflow==1.6.0' pandas matplotlib jupyter
+RUN pip install 'tensorflow==1.6.0' pandas matplotlib jupyter 'pillow==5.0.0' 'formencode==1.3.1'
+
+RUN pip install cherrypy==14.0.0 --ignore-installed
 
 RUN apt-get update && \
     apt-get install -y curl git && \ 

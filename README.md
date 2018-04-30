@@ -20,7 +20,7 @@ Ensure the Docker is installed.  See [Download Docker Community Edition]( https:
 ### Create Docker Container
 * Ensure Docker is running
 * From a terminal window (Command Prompt on Windows) run the following command
-  * `docker create -p 8888:8888 -it --name deep-learning-course deep-learning-course:0.0.1`
+  * `docker create -p 8888:8888 -p 9000:9000 -it --name deep-learning-course deep-learning-course:0.0.1`
   * once the container was successfully created, running `docker ps -a` should list a container with **IMAGE** set to **deep-learning-course:0.0.1** and **NAME** set to **deep-learning-course**, other container attributes are also shown.
 
 ## Using the Docker Container
