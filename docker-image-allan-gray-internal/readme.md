@@ -7,7 +7,7 @@ I have a powerful personal laptop, but it came with Windows Home.  Windows Home 
 ## Possible Solutions
 
 1. Install the (much) older Docker Toolkit, which creates a docker image on a headless version of Virtualbox.
-    * We use Docker Toolbox on our build machine and have had problems with it.  Also, I'm not sure how compatible it is with the laters docker features.  I didn't want to fiddle around and waste time.
+    * We use Docker Toolbox on our build machine and have had problems with it.  Also, I'm not sure how compatible it is with the latest docker features.  I didn't want to fiddle around and waste time.
 1. Install Ubuntu and dual boot.
     * Just got back from leave, don't have time by tonight.
 1. Get things running on my work computer and Remote into that.
@@ -16,7 +16,7 @@ I have a powerful personal laptop, but it came with Windows Home.  Windows Home 
 
 ## Modified Docker file    
 
-The Dockerfile as supplied will not build on a computer on the Allan Gray internal network because Websence intercepts or HTTPS traffic.  You get this error:
+The Dockerfile as supplied will not build on a computer on the Allan Gray internal network because Websense intercepts or HTTPS traffic.  You get this error:
 
 ````
 RUN pip install --upgrade pip
